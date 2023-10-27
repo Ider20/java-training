@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- exercise 01 -->
+    <div class="name">2023, LEAP, 1-C, Ider</div>
+    <div class="introduction">
+      <div class="logo">
+        <img src="./pn_logo_only_black.svg" alt="" />Pinecone Acedemy
+      </div>
+      <p>1. Нас тодорхойлох</p>
+      <div class="inputs">
+        <label for="for_age">Нас:</label>
+        <input type="number" id="test" required minlength="1" maxlength="2" />
+        <button onclick="example()">Тооцоолох</button>
+        <label for="">Үр дүн:</label>
+        <p id="result"></p>
+      </div>
+      <div class="explanation">
+        <p>Тайлбар:</p>
+        <p>НАС - <b>ҮР ДҮН</b></p>
+        <p>0 нас - <b>Насаа оруулна уу</b></p>
+        <p>1-2 нас - <b>Нярай хүүхэд</b></p>
+        <p>3-18 нас - <b>Хүүхэд</b></p>
+        <p>18-120 нас - <b>Насанд хүрсэн хүн</b></p>
+        <p>120 наснаас дээш - <b>Насны тоо хэтэрсэн байна</b></p>
+      </div>
+    </div>
+    <!-- exercise 02 -->
+    <div class="odd">
+      <p>2. Тэгш эсвэл сондгой тоог мэдэх.</p>
+      <div class="calc_odd">
+        <label for="">Тоо:</label>
+        <input type="number" id="odd_number" />
+        <button onclick="odd()">Тооцоолох</button>
+      </div>
+      <div>
+        <p>Үр дүн:</p>
+        <p id="result_odd"></p>
+      </div>
+    </div>
+    <!-- exercise 03 -->
+    <div class="larger_number">
+      <p>3. Хамгийн их тоог олох.</p>
+      <div class="flex">
+        <div class="large_inner">
+          <label for="">А тоо:</label>
+          <input type="number" name="" id="a" maxlength="999" />
+          <label for="">В тоо:</label>
+          <input type="number" id="b" maxlength="999" />
+          <label for="">С тоо:</label>
+          <input type="number" id="c" maxlength="999" />
+          <button onclick="large()">Тооцоолох</button>
+        </div>
+        <div>
+          <p>Үр дүн:</p>
+          <p id="result_large"></p>
+        </div>
+      </div>
+    </div>
+    <div class="copy_right"></div>
+    <script src="./bodlogo02.js"></script>
+  </body>
+</html>
