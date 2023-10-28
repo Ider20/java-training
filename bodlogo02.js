@@ -27,9 +27,9 @@ function odd() {
 }
 // exercise 03 begins here
 function large() {
-  let a = document.getElementById("a".value),
-    b = document.getElementById("b".value),
-    c = document.getElementById("c".value);
+  let a = document.getElementById("a"),
+    b = document.getElementById("b"),
+    c = document.getElementById("c");
   if (a.value > b.value && a.value > c.value) {
     document.getElementById("result_large").innerHTML = "А тоо нь их";
   } else if (b.value > a.value && b.value > c.value) {
@@ -97,3 +97,6 @@ function second_large() {
     document.getElementById("result_second_large").innerHTML = c1.value;
   }
 }
+// exersice 05
+let year = 0;
+let month = 0;
