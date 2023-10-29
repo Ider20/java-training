@@ -26,17 +26,35 @@ function odd() {
   }
 }
 // exercise 03 begins here
+// function large() {
+//   let a = document.getElementById("a"),
+//     b = document.getElementById("b"),
+//     c = document.getElementById("c");
+//   if (a.value > b.value && a.value > c.value) {
+//     document.getElementById("result_large").innerHTML = "А тоо нь их";
+//   } else if (b.value > a.value && b.value > c.value) {
+//     document.getElementById("result_large").innerHTML = "В тоо нь их";
+//   } else if (c.value > a.value && c.value > b.value) {
+//     document.getElementById("result_large").innerHTML = "C тоо нь их";
+//   }
+// }
 function large() {
-  let a = document.getElementById("a"),
-    b = document.getElementById("b"),
-    c = document.getElementById("c");
-  if (a.value > b.value && a.value > c.value) {
-    document.getElementById("result_large").innerHTML = "А тоо нь их";
-  } else if (b.value > a.value && b.value > c.value) {
-    document.getElementById("result_large").innerHTML = "В тоо нь их";
-  } else if (c.value > a.value && c.value > b.value) {
-    document.getElementById("result_large").innerHTML = "C тоо нь их";
+  let num1 = document.getElementById("num1").value;
+  let num2 = document.getElementById("num2").value;
+  let num3 = document.getElementById("num3").value;
+  console.log(num1, num2, num3);
+  let largest;
+  // check the condition
+  if (num1 >= num2 && num1 >= num3) {
+    largest = num1;
+  } else if (num2 >= num1 && num2 >= num3) {
+    largest = num2;
+  } else {
+    largest = num3;
   }
+  // display the result
+  document.getElementById("result_large").innerHTML = largest;
+  console.log("The largest number is " + largest);
 }
 // exercise 04 begins here
 function second_large() {
@@ -44,6 +62,7 @@ function second_large() {
     b1 = document.getElementById("b1"),
     c1 = document.getElementById("c1"),
     d1 = document.getElementById("d1");
+  console.log(a1.value, b1.value, c1.value, d1.value);
 
   if (a1.value > b1.value && a1.value > c1.value && a1.value < d1.value) {
     document.getElementById("result_second_large").innerHTML = a1.value;
@@ -89,14 +108,8 @@ function second_large() {
     c1.value >= d1.value
   ) {
     document.getElementById("result_second_large").innerHTML = c1.value;
-  } else if (
-    c1.value <= a1.value &&
-    c1.value >= b1.value &&
-    c1.value >= d1.value
-  ) {
+  } else {
     document.getElementById("result_second_large").innerHTML = c1.value;
   }
 }
-// exersice 05
-let year = 0;
-let month = 0;
+// exersice 05 repeating exersice 02
