@@ -62,7 +62,7 @@ function second_large() {
     b1 = document.getElementById("b1"),
     c1 = document.getElementById("c1"),
     d1 = document.getElementById("d1");
-  console.log(a1.value, b1.value, c1.value, d1.value);
+  console.log(typeof a1.value, b1.value, c1.value, d1.value);
 
   if (a1.value > b1.value && a1.value > c1.value && a1.value < d1.value) {
     document.getElementById("result_second_large").innerHTML = a1.value;
@@ -113,3 +113,29 @@ function second_large() {
   }
 }
 // exersice 05 repeating exersice 02
+
+
+
+// do{
+//   var secret = prompt("Please enter your password")
+//   console.log(secret)
+// }while (secret !== "sesame")
+
+// Тэгш тоонуудын нийлбэр
+let sum = 0
+let num01 = 5
+for(let num02 = 0; num02 <= num01; num02++){
+  if(num02%2==0){
+    sum=sum+num02
+  }
+}
+console.log(sum)
+
+// Нэгээр нэмэгдүүлэх
+
+let sum02 = 0
+let numb01 = 0
+for(let n = 6; numb01 <= n; numb01++){
+  sum02 = sum02 + numb01
+} 
+console.log(sum02)
