@@ -122,20 +122,54 @@ function second_large() {
 // }while (secret !== "sesame")
 
 // Тэгш тоонуудын нийлбэр
-let sum = 0
-let num01 = 5
-for(let num02 = 0; num02 <= num01; num02++){
-  if(num02%2==0){
-    sum=sum+num02
-  }
+// let sum = 0
+// let num01 = 5
+// for(let num02 = 0; num02 <= num01; num02++){
+//   if(num02%2==0){
+//     sum=sum+num02
+//   }
+// }
+// console.log(sum)
+
+// // Нэгээр нэмэгдүүлэх
+
+// let sum02 = 0
+// let numb01 = 0
+// for(let n = 6; numb01 <= n; numb01++){
+//   sum02 = sum02 + numb01
+// } 
+// console.log(sum02)
+
+// dasgal - for loop
+// 1.
+// for (i = 10; i > 0; i--){
+//   console.log(i)
+// }
+
+// // 2.
+// let sum = 0
+// for (let n = 1; n <= 100; n++, sum = sum + n){
+// }
+
+// nesting loop
+
+// for (let n = 0; n < 1; n++){
+//     for ( let result = ""; result < "******"; result += "*" )
+//   console.log(result)
+// }
+
+// let number = prompt("odnii toogoo oruulna uu")
+// for (let i = 1; i <= number; i++){
+//     let res = "";
+//     for(let j = 1; j <= i; j++) {
+//       res += "*";
+//     }console.log(res);
+// }
+
+let number = 5;
+for (let i = 0; i <= number; i++){
+  let res = "";
+  for(let j = 0; j <= number; number--){
+    res += "*"
+  }console.log(res)
 }
-console.log(sum)
-
-// Нэгээр нэмэгдүүлэх
-
-let sum02 = 0
-let numb01 = 0
-for(let n = 6; numb01 <= n; numb01++){
-  sum02 = sum02 + numb01
-} 
-console.log(sum02)
