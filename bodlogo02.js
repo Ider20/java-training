@@ -114,8 +114,6 @@ function second_large() {
 }
 // exersice 05 repeating exersice 02
 
-
-
 // do{
 //   var secret = prompt("Please enter your password")
 //   console.log(secret)
@@ -137,7 +135,7 @@ function second_large() {
 // let numb01 = 0
 // for(let n = 6; numb01 <= n; numb01++){
 //   sum02 = sum02 + numb01
-// } 
+// }
 // console.log(sum02)
 
 // dasgal - for loop
@@ -167,9 +165,15 @@ function second_large() {
 // }
 
 let number = 5;
-for (let i = 0; i <= number; i++){
-  let res = "";
-  for(let j = 0; j <= number; number--){
-    res += "*"
-  }console.log(res)
+let res = "";
+for (let i = 0; i <= 0; i++) {
+  // console.log(res);
+  for (let j = 0; j <= number; j++) {
+    res = res + "$";
+  }
+  console.log(res);
 }
+for (let k = 0; k <= number; k++) {
+  res += "*";
+}
+console.log(res);
