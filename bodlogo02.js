@@ -164,16 +164,58 @@ function second_large() {
 //     }console.log(res);
 // }
 
-let number = 5;
-let res = "";
-for (let i = 0; i <= 0; i++) {
-  // console.log(res);
-  for (let j = 0; j <= number; j++) {
-    res = res + "$";
+// let number = 5;
+// let res = "";
+// for (let i = 0; i <= 0; i++) {
+//   // console.log(res);
+//   for (let j = 0; j <= number; j++) {
+//     res = res + "$";
+//   }
+//   console.log(res);
+// }
+// for (let k = 0; k <= number; k++) {
+//   res += "*";
+// }
+// console.log(res);
+
+function maximum(x, y) {
+  if (x > y) {
+    console.log(x);
+  } else {
+    console.log(y);
   }
-  console.log(res);
 }
-for (let k = 0; k <= number; k++) {
-  res += "*";
+maximum(6, 7) + "asdasd";
+maximum(8, 4);
+
+function even(x) {
+  let y = 0;
+  y = x %= 2;
+  if (y == 0) {
+    console.log("Tegsh too mon baina");
+  } else {
+    console.log("Tegsh too bus baina");
+  }
 }
+even(8);
+
+// function average(a, b, c, d, e, f) {
+//   let x = (a + b + c + d + e + f) / 2;
+//   console.log(x);
+// }
+// average(1, 2, 3, 4, 5, 6);
+
+function sum(a, b, c, d, e, f) {
+  return a + b + c + d + e + f;
+}
+let result = sum(1, 2, 3, 4, 5, 6);
+console.log(result);
+
+function upper(text) {
+  return text.toUpperCase();
+}
+const res = upper("we want to be capital");
 console.log(res);
+
+const res02 = upper("we also want to be capital");
+console.log(res02);
