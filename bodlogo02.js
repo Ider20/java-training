@@ -185,7 +185,7 @@ function maximum(x, y) {
     console.log(y);
   }
 }
-maximum(6, 7) + "asdasd";
+maximum(6, 7);
 maximum(8, 4);
 
 function even(x) {
@@ -219,3 +219,9 @@ console.log(res);
 
 const res02 = upper("we also want to be capital");
 console.log(res02);
+
+function max(a, b, c, d, e, f) {
+  return a + b + c + d + e + f;
+}
+console.log("ehnii too:", max(1, 2, 3, 4, 5, 6));
+console.log("hoyor dahi too:", max(6, 5, 4, 3, 2, 2));
