@@ -156,12 +156,13 @@ function second_large() {
 //   console.log(result)
 // }
 
-// let number = prompt("odnii toogoo oruulna uu")
-// for (let i = 1; i <= number; i++){
-//     let res = "";
-//     for(let j = 1; j <= i; j++) {
-//       res += "*";
-//     }console.log(res);
+// let number = 6;
+// for (let i = 1; i <= number; i++) {
+//   let res = "";
+//   for (let j = 1; j <= i; j++) {
+//     res += "*";
+//   }
+//   console.log(res);
 // }
 
 // let number = 5;
@@ -173,11 +174,11 @@ function second_large() {
 //   }
 //   console.log(res);
 // }
+
 // for (let k = 0; k <= number; k++) {
 //   res += "*";
 // }
 // console.log(res);
-
 
 // function maximum(x, y) {
 //   if (x > y) {
@@ -188,7 +189,6 @@ function second_large() {
 // }
 // maximum(6, 7);
 // maximum(8, 4);
-
 
 // function even(x) {
 //   let y = 0;
@@ -201,21 +201,17 @@ function second_large() {
 // }
 // even(8);
 
-
 // function average(a, b, c, d, e, f) {
 //   let x = (a + b + c + d + e + f) / 2;
 //   console.log(x);
 // }
 // average(1, 2, 3, 4, 5, 6);
 
-
 // function sum(a, b, c, d, e, f) {
 //   return a + b + c + d + e + f;
 // }
 // let result = sum(1, 2, 3, 4, 5, 6);
 // console.log(result);
-
-
 
 // function upper(text) {
 //   return text.toUpperCase();
@@ -226,15 +222,13 @@ function second_large() {
 // const res02 = upper("we also want to be capital");
 // console.log(res02);
 
-
 // function max(a, b, c, d, e, f) {
 //   return a + b + c + d + e + f;
 // }
 // console.log("ehnii too:", max(1, 2, 3, 4, 5, 6));
 // console.log("hoyor dahi too:", max(6, 5, 4, 3, 2, 2));
 
-
-// 7. 
+// 7.
 // function factorial(x){
 //   let a = 1
 //   for(let b = 1;b<=x; x--){
@@ -243,18 +237,17 @@ function second_large() {
 // }
 // factorial(4)
 
-
 // palendrom too
-let number = 121
-let compare = number
-// let compare01 = 0
-let answer = 0
-let i= 0
-while(compare > 0 ){
- i = compare % 10 // 1 gedeg hariu gargaad answer luu oruulna, 2
- compare = (compare-i)/10// orongiin toog 1-r horogduulj baigaa 12, 
- answer = (answer+i) * 10// 1, 12, 
-}
-if (answer == number){
-  console.log("yes")
-}else {console.log("no")}
+// let number = 121
+// let compare = number
+// // let compare01 = 0
+// let answer = 0
+// let i= 0
+// while(compare > 0 ){
+//  i = compare % 10 // 1 gedeg hariu gargaad answer luu oruulna, 2
+//  compare = (compare-i)/10// orongiin toog 1-r horogduulj baigaa 12,
+//  answer = (answer+i) * 10// 1, 12,
+// }
+// if (answer == number){
+//   console.log("yes")
+// }else {console.log("no")}
