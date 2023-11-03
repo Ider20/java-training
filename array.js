@@ -20,27 +20,49 @@
 // }
 // console.log(sum);
 
-let min = 0;
-const numbers = [6, 3, 5, 22, 46, 17, 1];
-console.log(
-  Math.max(
-    numbers[0],
-    numbers[1],
-    numbers[2],
-    numbers[3],
-    numbers[4],
-    numbers[5],
-    numbers[6]
-  )
-);
-console.log(
-  Math.min(
-    numbers[0],
-    numbers[1],
-    numbers[2],
-    numbers[3],
-    numbers[4],
-    numbers[5],
-    numbers[6]
-  )
-);
+// let min = 0;
+// const numbers = [6, 3, 5, 22, 46, 17, 1];
+// console.log(
+//   Math.max(
+//     numbers[0],
+//     numbers[1],
+//     numbers[2],
+//     numbers[3],
+//     numbers[4],
+//     numbers[5],
+//     numbers[6]
+//   )
+// );
+// console.log(
+//   Math.min(
+//     numbers[0],
+//     numbers[1],
+//     numbers[2],
+//     numbers[3],
+//     numbers[4],
+//     numbers[5],
+//     numbers[6]
+//   )
+// );
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+// let chunk = 4
+// const new_numbers = []
+// for (let i = 0; i < numbers.length; i+=chunk){
+//   new_numbers.push(numbers.slice(i,i+chunk))
+// }console.log(new_numbers)
+
+const numbers = [8, 1, 3,10, 5, 6, 7]
+for (let i = 0; i < numbers.length; i++){
+   // let max = 0
+   for(let j =0; j < numbers.length; j++){
+      if(numbers[i]<numbers[j]){
+        let max = numbers[i]
+        numbers[i] = numbers[j]
+        numbers[j] = max
+      }
+   }
+}console.log(numbers)
+
+
+

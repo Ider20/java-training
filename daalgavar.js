@@ -43,13 +43,11 @@
 
 // Nested loop
 let sum = "";
-for (let i = 0; i <= 5; i++) {
-  let n = "$";
-  if (i == 4) {
-    break;
-  }
-  for (let j = i; j > 0; j--) {
-    sum = sum + n;
+let n = 5
+for (let i = 0; i <= n; i++) {
+  let s = "$";
+  for (let j = n; j > 0; j--) {
+    sum = sum + s;
     console.log(sum);
   }
 }
