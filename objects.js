@@ -127,14 +127,11 @@ const minute = second * 60;
 const hour = minute * 60;
 const day = hour * 24;
 let timer;
+timer = setInterval(countDown, second);
 function countDown() {
   const today = new Date();
   let time = Math.abs(newdate - today);
   //   console.log(time);
-  if (time <= 0) {
-    clearInterval(timer);
-    return;
-  }
   let days = Math.floor(time / day);
   let hours = Math.floor((time % day) / hour);
   let minutes = Math.floor((time % hour) / minute);
@@ -145,5 +142,8 @@ function countDown() {
     minutes + "минут",
     seconds + "секунд"
   );
+  if (time <= 0) {
+    clearInterval(timer);
+    return "Энэ өдөр болов";
+  }
 }
-timer = setInterval(countDown, second);
