@@ -147,7 +147,6 @@ console.log("Төрсөн өдөр хүртэл", diff, "хоног үлдсэн
 // }
 
 // Birthday
-
 function calcDays(x, a, y, c) {
   let calc = 0;
   calc = calc = (x - 1) * 30 + a - ((y - 1) * 30 + c);
