@@ -113,3 +113,37 @@
 // ];
 // let day = weekDays[birthDate.getUTCDay()];
 // console.log(day);
+
+// CountDown Timer
+const newdate = new Date("2023/11/20");
+console.log(
+  newdate.getFullYear() + "он",
+  newdate.getMonth() + "сар",
+  newdate.getDate(),
+  "өдөр хүртэл:"
+);
+const second = 1000;
+const minute = second * 60;
+const hour = minute * 60;
+const day = hour * 24;
+let timer;
+function countDown() {
+  const today = new Date();
+  let time = Math.abs(newdate - today);
+  //   console.log(time);
+  if (time <= 0) {
+    clearInterval(timer);
+    return;
+  }
+  let days = Math.floor(time / day);
+  let hours = Math.floor((time % day) / hour);
+  let minutes = Math.floor((time % hour) / minute);
+  let seconds = Math.floor((time % minute) / second);
+  console.log(
+    days + "өдөр",
+    hours + "цаг",
+    minutes + "минут",
+    seconds + "секунд"
+  );
+}
+timer = setInterval(countDown, second);
